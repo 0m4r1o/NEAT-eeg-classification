@@ -42,5 +42,26 @@ The evolutionary process continues until the fitness function converges, indicat
 The final model is evaluated on a separate test set to assess its real-world performance.
 Detailed analysis of the model's predictions, including confusion matrices and other performance metrics, is conducted to understand its strengths and limitations.
 
+### Installation
+To install requirements, simply enter the following command : 
+
+```bash
+pip install -r requirements.txt
+```
+and to launch the app the following command is needed: 
+```bash
+python EyeEEG.py
+```
+all of the metadata needed for the model is stored in ***neat_config***, for instance : 
+
+```yaml
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 14
+num_outputs             = 1
+```
+
+
 ## Conclusion
 This project aims to harness the power of NEAT to create an efficient and accurate model for classifying EEG data into open and closed eye states. By optimizing the neural network's architecture and leveraging the Matthews Correlation Coefficient as the fitness function, we strive to achieve high classification performance. The outcomes of this project have the potential to contribute significantly to fields that rely on EEG data, offering insights and tools for better understanding and monitoring cognitive states, And we hope that the idea can be used in more complex projects revolving around more complex EEG classification.
